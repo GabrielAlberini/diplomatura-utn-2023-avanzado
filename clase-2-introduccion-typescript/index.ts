@@ -7,7 +7,7 @@
 // Tipado 
 
 // string
-let nombre: string = "Gabriel"
+let nombre:string = "Gabriel"
 console.log(nombre)
 
 let edad: number = 29
@@ -85,6 +85,7 @@ const diasDeLaSemana = {
   6: "Sábado",
   7: "Domingo"
 }
+
 diasDeLaSemana[1] = "Pepito"
 
 let hoy: DiasDeLaSemana = DiasDeLaSemana.Jueves
@@ -98,11 +99,11 @@ let hoy: DiasDeLaSemana = DiasDeLaSemana.Jueves
 // const saludo = saludar("lautaro")
 // console.log(saludo)
 
-const sumar = (n1: number, n2: number):void => {
+const sumarNumeros = (n1: number, n2: number): void => {
   console.log(n1 + n2)
 }
 
-sumar(1,2)
+sumarNumeros(1,2)
 
 // Lista de nombres
 // Crea una lista de nombres e imprime cada nombre en la lista.
@@ -121,5 +122,3 @@ const nombresConIndice = nombres2.map((nombre: string, indice: number) => {
   }
   return obj
 })
-
-console.log(nombresConIndice)
