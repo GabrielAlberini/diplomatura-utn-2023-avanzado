@@ -8,7 +8,21 @@ const agregarNombre = (nombreNuevo: string) => {
   // Necesito parsear la data para modificarla. No puedo hacer un push a un string. Necesito un array
   const parsedData = JSON.parse(data);
 
-  // Pusheo el nombre que el usuario paso por parametro de la terminal
+  // const nombreEncontrado = parsedData.find((nombre: string) => {
+  //   if (nombre === nombreNuevo) {
+  //     return nombre;
+  //   }
+  // });
+
+  // true si existe o false si no existe
+  const nombreEncontrado = parsedData.includes(nombreNuevo);
+
+  // Si nombreEncontrado es true quiere decir que el nombre ya existe por ende corto el proceso de la función mediante un return
+  if (nombreEncontrado) {
+    return `El nombre ${nombreNuevo} ya existe en la base de datos.`;
+  }
+
+  // Agrega el nombre que el usuario paso por parametro de la terminal
   parsedData.push(nombreNuevo);
 
   // Convierto la data MODIFICADA a un string que es lo que necesita el método writeFileSync.

@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import { v4 as uuid } from "uuid";
 
 interface Pelicula {
@@ -60,21 +61,26 @@ let PELICULAS = [
 ];
 
 // getter
-const mostrarPeliculas = (): Pelicula[] => {
-  const mappedData = PELICULAS.map((pelicula) => {
+const mostrarPeliculas = () => {
+  const data = fs.readFileSync("./database/films.json", "utf8");
+  const parsedData = JSON.parse(data);
+
+  const mappedData = parsedData.map((pelicula: Pelicula) => {
     const nuevaPelicula = {
       nombre: pelicula.nombre,
       rating: pelicula.rating,
     };
     return nuevaPelicula;
   });
-
   return mappedData;
 };
 
 // getter
 const mostrarPelicula = (id: string): Pelicula | false => {
-  const peliculaEncontrada = PELICULAS.find((pelicula) => {
+  const data = fs.readFileSync("./database/films.json", "utf8");
+  const parsedData = JSON.parse(data);
+
+  const peliculaEncontrada = parsedData.find((pelicula: Pelicula) => {
     if (pelicula.id === id) {
       return pelicula;
     }

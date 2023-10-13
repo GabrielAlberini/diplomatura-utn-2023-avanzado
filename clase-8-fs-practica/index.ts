@@ -7,7 +7,7 @@ import {
   Pelicula,
 } from "./peliculas";
 
-// Params siempre sera un array que contiene los parametros pasados por la terminal como string
+// totalArgs siempre sera un array que contiene los parametros pasados por la terminal como string
 // Si paso un número, este también será un string
 const totalArgs = process.argv;
 const args = totalArgs.splice(2);
