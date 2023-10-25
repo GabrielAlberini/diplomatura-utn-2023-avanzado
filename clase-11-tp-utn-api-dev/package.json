@@ -1,0 +1,19 @@
+{
+  "name": "tp-utn-api-dev",
+  "version": "1.0.0",
+  "description": "Arquetipo de API REST",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "keywords": [
+    "API",
+    "requests",
+    "REST"
+  ],
+  "author": "gabrielalberini",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.8"
+  }
+}
