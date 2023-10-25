@@ -1,6 +1,6 @@
 // Tomar el input del usurio, validarlo y enviarle la petición "curada" a books.ts
 // Devolverle al usuario la respuesta en forma visual
-import { addNewBook, getAll } from "./books";
+import { addNewBook, deleteBookById, getAll, getBookById } from "./books";
 
 const main = () => {
   const args = process.argv.splice(2);
@@ -9,13 +9,15 @@ const main = () => {
     const books = getAll();
     console.log(books);
   } else if (args[0] === "--get" && args[1] === "--id" && args.length === 3) {
-    console.log("Petición para pedir UN libro en particular.");
+    const book = getBookById(args[2]);
+    console.log(book);
   } else if (
     args[0] === "--delete" &&
     args[1] === "--id" &&
     args.length === 3
   ) {
-    console.log("Petición para borrar UN libro.");
+    const status = deleteBookById(args[2]);
+    console.log(status);
   } else if (
     args[0] === "--add" &&
     args[1] === "--nombre" &&

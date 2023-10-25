@@ -1,14 +1,10 @@
 // Recibe la "request" y devuelve a index la respuesta en relación a la lectura de la base de datos
+
+import { readDb, writeDb } from "./utils/manipulateDb";
 import { randomUUID } from "node:crypto";
-import fs, { writeFileSync } from "node:fs";
+import { Book } from "./interfaces/book";
 
-const readDb = () => {
-  const jsonData = fs.readFileSync("./db/books.json", "utf-8");
-  const books = JSON.parse(jsonData);
-  return books;
-};
-
-const getAll = (): object[] | string => {
+const getAll = (): Book[] | string => {
   const books = readDb();
   if (books.length > 0) {
     return books;
@@ -17,19 +13,45 @@ const getAll = (): object[] | string => {
   }
 };
 
-const getBookById = (id: string) => {};
+const getBookById = (id: string) => {
+  const books: Book[] = readDb();
 
-const deleteBookById = (id: string) => {};
+  const foundBook: Book | undefined = books.find(
+    (book: Book) => book.id === id
+  );
 
-const addNewBook = (dataBook: any) => {
+  if (foundBook) {
+    return foundBook;
+  } else {
+    return "El libro no existe en la base de datos.";
+  }
+};
+
+const deleteBookById = (id: string) => {
   const books = readDb();
 
-  const foundBook = books.find((book: any) => book.name === dataBook.name);
+  const foundBook: Book | undefined = books.find(
+    (book: Book) => book.id === id
+  );
+
+  if (!foundBook) {
+    return "El libro no existe en la base de datos.";
+  }
+
+  const newBooks: Book[] = books.filter((book: Book) => book.id !== id);
+  writeDb(newBooks);
+  return "Libro borrado con éxito.";
+};
+
+const addNewBook = (dataBook: Book) => {
+  const books = readDb();
+
+  const foundBook = books.find((book: Book) => book.name === dataBook.name);
 
   if (!foundBook) {
     dataBook.id = randomUUID();
     books.push(dataBook);
-    writeFileSync("./db/books.json", JSON.stringify(books));
+    writeDb(books);
     return "Libro agregado con éxito.";
   } else {
     return "El libro ya existe en la base de datos.";
