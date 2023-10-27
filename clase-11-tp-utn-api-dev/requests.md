@@ -1,4 +1,4 @@
-- ts-node index.ts --get --all
+- ts-node index.ts --get --all -> devuelve un array con todos los libros.
 
 - ts-node index.ts --get --id "valor de id"
 
