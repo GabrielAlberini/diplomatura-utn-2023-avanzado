@@ -6,6 +6,7 @@ import { Book } from "./interfaces/book";
 
 const getAll = (): Book[] | string => {
   const books = readDb();
+  
   if (books.length > 0) {
     return books;
   } else {
