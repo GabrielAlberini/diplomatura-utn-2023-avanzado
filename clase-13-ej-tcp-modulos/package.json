@@ -4,7 +4,7 @@
   "description": "chat construido mediante el protocolo TCP en red local",
   "main": "server.ts",
   "scripts": {
-    "server": "ts-node server.ts",
+    "server": "nodemon server.ts",
     "client": "ts-node client.ts"
   },
   "repository": {
@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/GabrielAlberini/diplomatura-utn-2023-avanzado#readme",
   "devDependencies": {
-    "@types/node": "^20.8.9"
+    "@types/node": "^20.8.9",
+    "nodemon": "^3.0.1"
   },
   "dependencies": {
     "dotenv": "^16.3.1"

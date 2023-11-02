@@ -1,6 +1,8 @@
 import net from "node:net";
+import dotenv from "dotenv";
+dotenv.config();
 
-const PORT = 1234; // Las pc cuentan con 65565 puertos
+const PORT = process.env.PORT; // Las pc cuentan con 65565 puertos
 
 const serverTCP = net.createServer();
 

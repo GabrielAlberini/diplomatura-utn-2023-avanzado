@@ -11,9 +11,8 @@ const clientTCP = net.connect(OPTIONS);
 
 clientTCP.on("connect", () => {
   console.log("Conection succesful");
-
   const args = process.argv.splice(2);
-  const request = JSON.stringify(args); // [ '--get', '--all' ]
+  const request = JSON.stringify(args);
 
   clientTCP.write(request);
 });
@@ -21,6 +20,6 @@ clientTCP.on("connect", () => {
 clientTCP.on("data", (data) => {
   const stringResponse = data.toString();
   const response = JSON.parse(stringResponse);
-  console.log(response);
+  console.log("Respuesta del servidor: ", response);
   clientTCP.end();
 });
