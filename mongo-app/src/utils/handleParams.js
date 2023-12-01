@@ -1,6 +1,13 @@
+import {
+  addPizza,
+  deletePizzaById,
+  getPizzaById,
+  getPizzas,
+} from "../controller/controller.js";
+import { randomUUID } from "node:crypto";
+
 const processParams = async (req) => {
-  //  ["getPizzas"]
-  //  ["getPizza", "id", "1"]
+  console.log(req, "<-- parametros mostrados desde el controlador");
   const action = req[0];
 
   switch (action) {

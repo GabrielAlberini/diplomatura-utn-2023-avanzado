@@ -13,6 +13,10 @@ clientTCP.on("connect", () => {
   console.log("Client connected");
   const args = process.argv.splice(2);
   clientTCP.write(JSON.stringify(args));
+});
 
+clientTCP.on("data", (bufferData) => {
+  const data = JSON.parse(bufferData.toString());
+  console.log(data);
   clientTCP.end();
 });

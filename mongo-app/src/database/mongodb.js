@@ -4,11 +4,11 @@ dotenv.config();
 
 const uriDb = process.env.URI_DB;
 
-const clientMongo = new MongoClient(uriDb);
+const client = new MongoClient(uriDb);
 
 const createConnectionMongo = async () => {
   try {
-    await clientMongo.connect();
+    await client.connect();
     console.log("Connection to the database established.");
   } catch (err) {
     const msjError = `${err.code} - ${err.codeName}`;
@@ -16,4 +16,4 @@ const createConnectionMongo = async () => {
   }
 };
 
-export { clientMongo, createConnectionMongo };
+export { client, createConnectionMongo };
