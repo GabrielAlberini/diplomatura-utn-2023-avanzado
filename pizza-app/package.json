@@ -1,0 +1,21 @@
+{
+  "name": "pizza-app",
+  "version": "1.0.0",
+  "description": "a mongo application - utn",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "backend"
+  ],
+  "author": "gabrielalberini",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongodb": "^6.3.0"
+  }
+}
