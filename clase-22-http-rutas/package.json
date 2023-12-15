@@ -1,0 +1,18 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "http server",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index-refaccionado.js"
+  },
+  "keywords": [
+    "http"
+  ],
+  "author": "gabrielalberini",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

@@ -1,11 +1,8 @@
-import { randomUUID } from "node:crypto";
 import http from "node:http";
 import dotenv from "dotenv";
 dotenv.config();
 
 const port = process.env.PORT;
-
-console.log(port);
 
 // Petición libre, sin discriminar el tipo de método indicado
 // const serverHttp = http.createServer((request, response) => {

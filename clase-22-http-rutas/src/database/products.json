@@ -1,0 +1,190 @@
+[
+  {
+    "id": "aBcDeFgHiJkLmN",
+    "nombre": "Zapatillas Nike Air Max",
+    "colores": ["Rojo", "Negro", "Blanco"],
+    "tamanios": ["S", "M", "L"],
+    "precio": 99.99,
+    "stock": 50,
+    "sku": "NIKE1234567890",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "pQrStUvWxYzAbC",
+    "nombre": "Camiseta Adidas Originals",
+    "colores": ["Azul", "Gris", "Negro"],
+    "tamanios": ["M", "L", "XL"],
+    "precio": 29.99,
+    "stock": 30,
+    "sku": "ADIDAS0987654321",
+    "envios": false,
+    "aceptaCuponDescuento": false
+  },
+  {
+    "id": "1a2b3c4d5e6f7g",
+    "nombre": "Laptop HP Pavilion",
+    "colores": ["Plata", "Negro"],
+    "tamanios": ["13 pulgadas", "15 pulgadas"],
+    "precio": 799.99,
+    "stock": 20,
+    "sku": "HP4567890123456",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "8h9i0j1k2l3m4n",
+    "nombre": "Smartphone Samsung Galaxy S21",
+    "colores": ["Negro", "Azul", "Plata"],
+    "tamanios": ["128GB", "256GB"],
+    "precio": 999.99,
+    "stock": 15,
+    "sku": "SAMSUNG6543210987",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "oPtIoNalId1234",
+    "nombre": "Auriculares Sony WH-1000XM4",
+    "colores": ["Negro", "Plata"],
+    "tamanios": ["Normal", "Extra Grande"],
+    "precio": 349.99,
+    "stock": 25,
+    "sku": "SONY9876543210",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "abcd5678efghij",
+    "nombre": "Cámara Canon EOS Rebel T7i",
+    "colores": ["Negro"],
+    "tamanios": ["Con lente 18-55mm", "Solo cuerpo"],
+    "precio": 649.99,
+    "stock": 18,
+    "sku": "CANON1234567890",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "9876lmn5432pqr",
+    "nombre": "Silla de Oficina Ergonómica",
+    "colores": ["Negro", "Gris", "Azul"],
+    "tamanios": ["Normal", "Grande"],
+    "precio": 129.99,
+    "stock": 40,
+    "sku": "OFISILLA87654321",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "111222333aaaBB",
+    "nombre": "Teclado mecánico RGB",
+    "colores": ["Negro", "Blanco"],
+    "tamanios": ["Tenkeyless", "Full Size"],
+    "precio": 79.99,
+    "stock": 22,
+    "sku": "KEYBOARD87654321",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "zZyYxXwWvVuU123",
+    "nombre": "Monitor ASUS 27 pulgadas",
+    "colores": ["Negro"],
+    "tamanios": ["27 pulgadas"],
+    "precio": 299.99,
+    "stock": 35,
+    "sku": "ASUS1234567890",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "ABCdef123456789",
+    "nombre": "Mochila North Face",
+    "colores": ["Negro", "Gris", "Verde"],
+    "tamanios": ["Pequeña", "Mediana"],
+    "precio": 89.99,
+    "stock": 28,
+    "sku": "NORTHFACE0987654",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "xyz987uvw654321",
+    "nombre": "Cafetera Nespresso",
+    "colores": ["Negro", "Rojo"],
+    "tamanios": ["Original", "Vertuo"],
+    "precio": 129.99,
+    "stock": 15,
+    "sku": "NESPRESSO1234567",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "lmn456opq789rst",
+    "nombre": "Altavoces Bluetooth JBL",
+    "colores": ["Negro", "Azul", "Rojo"],
+    "tamanios": ["Pequeño", "Grande"],
+    "precio": 59.99,
+    "stock": 32,
+    "sku": "JBL9876543210",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "11223344aabbcc",
+    "nombre": "Smartwatch Apple Watch Series 6",
+    "colores": ["Negro", "Plata", "Oro"],
+    "tamanios": ["40mm", "44mm"],
+    "precio": 399.99,
+    "stock": 20,
+    "sku": "APPLE1234567890",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "opqrstuvwxYz123",
+    "nombre": "Impresora HP LaserJet Pro",
+    "colores": ["Blanco"],
+    "tamanios": ["Impresora láser"],
+    "precio": 199.99,
+    "stock": 25,
+    "sku": "HPPRINTER8765432",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  {
+    "id": "890abcdef123ghi",
+    "nombre": "Máquina de Ejercicio Peloton",
+    "colores": ["Negro", "Rojo"],
+    "tamanios": ["Básica", "Premium"],
+    "precio": 1499.99,
+    "stock": 10,
+    "sku": "PELOTON123456789",
+    "envios": true,
+    "aceptaCuponDescuento": true
+  },
+  { "name": "Titanic", "premiere": "2000", "rating": "5" },
+  {
+    "id": "23bkkrkjfg234rj",
+    "nombre": "TV Samsung 48p",
+    "colores": ["Negro"],
+    "tamanios": [24, 48],
+    "precio": 100000,
+    "stock": 2,
+    "sku": "TELEGIGANTEOMG",
+    "envios": true,
+    "aceptaCuponDescuento": false
+  },
+  {
+    "id": "1",
+    "nombre": "TV Samsung 48p",
+    "colores": ["Negro"],
+    "tamanios": [24, 48],
+    "precio": 100000,
+    "stock": 2,
+    "sku": "TELEGIGANTEOMG",
+    "envios": true,
+    "aceptaCuponDescuento": false
+  }
+]
