@@ -14,3 +14,7 @@ const serverHttp = http.createServer((request, response) => {
 serverHttp.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}/`);
 });
+
+// Petición -> pedirle algun recurso al servidor
+// GET
+// POST
