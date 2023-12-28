@@ -16,11 +16,8 @@ export const getProducts = (__, response) => {
 
 export const addProduct = (__, response, body) => {
   const newProduct = JSON.parse(body);
-
   try {
     const validate = middlewareProductStructure(newProduct);
-    console.log(validate, "respuesta del middleware");
-
     if (validate) {
       productModel.addProduct(newProduct);
 

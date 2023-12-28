@@ -34,7 +34,7 @@ Manejar el output: "lo que le devuelvo al cliente".
 Directorio para funcionalidades generales.
 
 ### Routes
-Enrutador. Maneja las diferentes rutas de la app. Maneja los endpoints.
+Enrutador. Maneja los diferentes endpoints de la app.
 
 ## Consiga para el jueves 21 de diciembre
 
