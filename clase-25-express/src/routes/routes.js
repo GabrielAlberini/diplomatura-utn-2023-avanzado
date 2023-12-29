@@ -11,10 +11,12 @@ routes.get("/", (req, res) => {
     endpoints: {
       index: "/",
       getProducts: "/api/product",
-      addProducts: "/product",
+      addProducts: "/api/product",
     },
   });
 });
+
+//  http:localhost:3005/api/product -> GET
 routes.get("/product", productsController.getProducts);
 
 routes.post(
